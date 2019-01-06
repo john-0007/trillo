@@ -1,0 +1,13 @@
+.wrapper {
+	padding-left: 12px;
+	padding-right: 12px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 5;
+	position: relative;
+	@include respond(medium) {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+}

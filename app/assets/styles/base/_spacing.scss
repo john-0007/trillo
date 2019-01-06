@@ -1,0 +1,226 @@
+/*
+        SPACING
+    Below is the specing acronym and abbreviation
+     Variables
+    xs   = extra-small
+    s    = small
+    m    = medium
+    l    = large
+    xl   = extra-large
+    xxl  = extra-extra-large
+    xxxl = extra-extra-extra-large
+    Classes
+     for Padding
+    pa = padding-all
+    pt = padding-top
+    pr = padding-right
+    pb = padding-bottom
+    pl = padding-left
+     for margin
+    ma = margin-all
+    mt = margin-top
+    mr = margin-right
+    mb = margin-bottom
+    ml = margin-left
+
+*/
+  // Spacing variable
+	$zero:  0;
+	$xs:   .25rem;
+	$s:    .5rem;
+	$m:    1rem;
+	$l:    2rem;
+	$xl:   4rem;
+	$xxl:  8rem;
+	$xxxl: 16rem;
+
+// PADDING
+	// Padding all
+.pa-0 {
+	padding: $zero;
+}
+.pt-0 {
+	padding-bottom: $zero;
+}
+.pr-0 {
+	padding-bottom: $zero;
+}
+.pb-0 {
+	padding-bottom: $zero;
+}
+.pl-0 {
+	padding-bottom: $zero;
+}
+// padding top
+.pt {
+	&-0 {
+			padding-top: 0;
+	}
+	&-xs {
+			padding-top: $xs;
+	}
+	&-s {
+		padding-top: $s;
+	}
+	&-m {
+		padding-top: $m;
+	}
+	&-l {
+		padding-top: $l;
+	}
+	&-xl {
+		padding-top: $xl;
+	}
+	&-xxl {
+		padding-top: $xxl;
+	}
+	&-xxxl {
+		padding-top: $xxxl;
+	}
+}
+.pb {
+	&-0 {
+			padding-bottom: 0;
+	}
+	&-xs {
+			padding-bottom: $xs;
+	}
+	&-s {
+		padding-bottom: $s;
+	}
+	&-m {
+		padding-bottom: $m;
+	}
+	&-l {
+		padding-bottom: $l;
+	}
+	&-xl {
+		padding-bottom: $xl;
+	}
+	&-xxl {
+		padding-bottom: $xxl !important;
+	}
+	&-xxxl {
+		padding-bottom: $xxxl;
+	}
+}
+.plr {
+	&-s {
+			padding-right: $s !important;
+			padding-left: $s !important;
+	}
+	&-m {
+			padding-right: $m;
+			padding-left: $m;
+	}
+}
+
+// margin bottom
+.mb {
+	&-0 {
+			margin-bottom: $zero !important;
+	}
+	&-xs {
+			margin-bottom: $xs;
+	}
+	&-s {
+			margin-bottom: $s !important;
+	}
+	&-sm {
+			margin-bottom: .75rem !important;
+	}
+	&-m {
+			margin-bottom: $m !important;
+	}
+	&-l {
+			margin-bottom: $l !important;
+	}
+	&-xl {
+			margin-bottom: $xl !important;
+	}
+}
+// margin top
+.mt {
+	&-0 {
+			margin-top: $zero;
+	}
+	&-xs {
+			margin-top: $xs;
+	}
+	&-s {
+			margin-top: $s;
+	}
+	&-m {
+			margin-top: $m;
+	}
+	&-l {
+			margin-top: $l;
+	}
+	&-xl {
+			margin-top: $xl;
+	}
+	&-xxl {
+		margin-top: $xxl;
+	}
+	&-xxxl {
+		margin-top: $xxxl;
+	}
+}
+
+.mr {
+	&-0 {
+			margin-right: $zero;
+	}
+	&-xs {
+			margin-right: $xs;
+	}
+	&-s {
+			margin-right: $s;
+	}
+	&-m {
+			margin-right: $m;
+	}
+	&-l {
+			margin-right: $l;
+	}
+}
+// margin right and left
+.mrl {
+	&-s {
+			margin-right: $s;
+			margin-left: $s;
+	}
+	&-m {
+			margin-right: $m;
+			margin-left: $m;
+	}
+}
+
+// margin all
+
+.ma {
+	&-0 {
+			margin: 0;
+	}
+	&-xs {
+			margin: $xs;
+	}
+	&-s {
+			margin: $s;
+	}
+	&-m {
+			margin: $m;
+	}
+	&-l {
+			margin: $l;
+	}
+	&-xl {
+			margin: $xl;
+	}
+	&-xxl {
+			margin: $xxl;
+	}
+	&-xxxl {
+			margin: $xxxl;
+	}
+}

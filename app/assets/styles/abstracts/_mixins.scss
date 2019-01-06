@@ -1,0 +1,63 @@
+@mixin respond($breakpoint) {
+									// 480px //
+	@if $breakpoint == small {
+			@media (min-width:30em){@content}; 
+	}
+	@if $breakpoint == max-small {
+			@media (max-width:30em){@content}; 
+	}
+	              // 768px //
+	@if $breakpoint == medium{
+			@media (min-width:48em){@content}; 
+	}
+	@if $breakpoint == max-medium {
+			@media (max-width:48em){@content}; 
+	}
+						 // 992px //
+	@if $breakpoint == medium-large {
+			@media (min-width:62em){@content}; 
+	}
+	@if $breakpoint == max-medium-large {
+			@media (max-width:62em){@content};
+	}
+						// 1200px //
+	@if $breakpoint == large {
+			@media (min-width:75em){@content}; 
+	}
+	@if $breakpoint == max-large {
+			@media (max-width:75em){@content}; 
+	}
+}
+@mixin custom($width) {
+	@media (min-width: #{$width}){
+			@content;
+	}
+}
+@mixin max-custom($width) {
+	@media (max-width: #{$width}){
+			@content;
+	}
+}
+
+//  TRUNCATE
+@mixin line-clamp($line) {
+	display: -webkit-box;
+	display: -moz-box;
+	overflow: hidden;
+	-webkit-line-clamp: $line;
+	-moz-line-clamp: $line;
+	-webkit-box-orient: vertical;
+}
+
+// HYPHENATE
+@mixin hyphenate {
+	word-break: break-all;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+// Primary-Shadow 
+@mixin primary-shadow {
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.10);
+}
