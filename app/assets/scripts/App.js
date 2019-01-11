@@ -1,4 +1,1 @@
-import './modules/index'
-
-
-
+import './modules/sprite'
